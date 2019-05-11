@@ -9,7 +9,14 @@ public class Bullet : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        
+        //ゲームオブジェクトの前方向へのベクトルを計算
+        var velocity = speed * transform.forward;
+
+        //Rigidbodyコンポーネントを取得
+        var rigidbody = GetComponent<Rigidbody>();
+
+        //Rigidbodyを使って弾丸に初速を与える
+        rigidbody.AddForce(velocity, ForceMode.VelocityChange);
     }
 
     // Update is called once per frame
