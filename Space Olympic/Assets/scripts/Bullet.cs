@@ -19,6 +19,13 @@ public class Bullet : MonoBehaviour {
         rigidbody.AddForce(velocity, ForceMode.VelocityChange);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        other.SendMessage("OnHitBullet");
+
+        Destroy(gameObject);
+    }
+
     // Update is called once per frame
     void Update() {
         

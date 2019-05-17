@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5599830857172574808}
   - component: {fileID: 1257665031541686844}
   - component: {fileID: 3671847967589808737}
+  - component: {fileID: 1080070694023522674}
+  - component: {fileID: 2239066078829199974}
+  - component: {fileID: 3013904594878051945}
   m_Layer: 0
   m_Name: Asteroid_2
   m_TagString: Untagged
@@ -77,3 +80,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1080070694023522674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539412230784186596}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b3895086f38564ebb5d2db78719fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCollider: {fileID: 0}
+  enemyRenderer: {fileID: 0}
+  point: 1
+--- !u!136 &2239066078829199974
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539412230784186596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.02
+  m_Direction: 1
+  m_Center: {x: -0.0000000023283064, y: -0.0000000018626448, z: 0}
+--- !u!114 &3013904594878051945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539412230784186596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d37495a57eb80342b5927c76d16f19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 1
+  gunParticle: {fileID: 155438580426770873, guid: 500d50281f3f02246b2f229b3defaae5,
+    type: 3}
+  asteroid: {fileID: 0}

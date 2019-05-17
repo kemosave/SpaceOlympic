@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0d37495a57eb80342b5927c76d16f19c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gunParticle: {fileID: 19800000, guid: 0bd11145ced4539458f937fc4609544a, type: 3}
+  - asteroid: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

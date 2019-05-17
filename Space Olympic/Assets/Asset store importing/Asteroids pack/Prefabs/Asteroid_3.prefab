@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3227043935615972179}
   - component: {fileID: 6778775772668590801}
   - component: {fileID: 4564258666506977473}
-  m_Layer: 0
+  - component: {fileID: 2306891951931958397}
+  - component: {fileID: 4399819199184913849}
+  m_Layer: 10
   m_Name: Asteroid_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,3 +79,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &2306891951931958397
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8003495884289897023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.009999998
+  m_Height: 0.019999994
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4399819199184913849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8003495884289897023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b3895086f38564ebb5d2db78719fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCollider: {fileID: 0}
+  enemyRenderer: {fileID: 0}
+  point: 1

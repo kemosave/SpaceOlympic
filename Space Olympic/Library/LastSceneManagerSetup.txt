@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SpaceOlympicScene.unity
+- path: Assets/Scenes/SpaceOlympic_another.unity
   isLoaded: 1
   isActive: 1
