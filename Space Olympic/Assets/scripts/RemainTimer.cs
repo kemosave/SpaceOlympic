@@ -26,7 +26,7 @@ public class RemainTimer : MonoBehaviour
         {
             currentTime = 0.0f;
         }
-        uiText.text = string.Format("残り時間：{0:F}秒", currentTime);//残り時間テキスト更新
+        uiText.text = string.Format("残り時間:{0:F}秒", currentTime);//残り時間テキスト更新
         
     }
     public bool IsCountingDown()//カウントダウンを行っているか

@@ -15,7 +15,7 @@ public class CameraRotator : MonoBehaviour
     }
 
     // Update is called once per frame
-//#if UNITY_EDITOR
+#if UNITY_EDITOR
     void Update()
     {
         //矢印キーからの入力による回転量を取得
@@ -33,5 +33,5 @@ public class CameraRotator : MonoBehaviour
         //transformに回転量を適応する
         transform.rotation = Quaternion.Euler(verticalAngle, horizontalAngle, 0f);
     }
-//#endif
+#endif
 }

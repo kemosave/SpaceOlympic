@@ -6,6 +6,8 @@ public class Move : MonoBehaviour
 
     [SerializeField] private Vector3 velocity;              // 移動方向
     [SerializeField] private float moveSpeed = 5.0f;        // 移動速度
+    [SerializeField] float playerPosition_x = -15;  //プレイヤーのx座標
+    [SerializeField] float playerPosition_y = -19;  //プレイヤーのy座標
 
     float Target;
 	void Start()
@@ -32,6 +34,9 @@ public class Move : MonoBehaviour
             velocity = -transform.forward;
         if (Input.GetKey(KeyCode.D))
             velocity.x += 1;
+
+        //フィールドの端に境界線を作る
+        
 
         // 速度ベクトルの長さを1秒でmoveSpeedだけ進むように調整します
         velocity = velocity.normalized * moveSpeed * Time.deltaTime;
