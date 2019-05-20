@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartActivity.unity
     guid: 778030e8fd8082d4198c933bb3a00aa9
   - enabled: 1
+    path: Assets/Scenes/CountdownActivity.unity
+    guid: da8a91e56b7eec0498f81ea0e0751c35
+  - enabled: 1
     path: Assets/Scenes/SpaceOlympicActivity.unity
     guid: 61e2813a11437084a87f004882e5d419
   - enabled: 1

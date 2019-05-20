@@ -456,6 +456,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5931762417468201032, guid: 1017daae0fb3cc44db51a56325a9d296,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 5931762417468201039, guid: 1017daae0fb3cc44db51a56325a9d296,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -929,12 +934,14 @@ GameObject:
   m_Component:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
+  - component: {fileID: 534669911}
   - component: {fileID: 534669907}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
   - component: {fileID: 534669908}
   - component: {fileID: 534669909}
   - component: {fileID: 534669910}
+  - component: {fileID: 534669912}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1062,6 +1069,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df5e1c92526f1c46bc5ced12ab6b34d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &534669911
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &534669912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40aac5138aff53a4b94448fa28a9f5b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObj: {fileID: 2050245990}
+  targetDistance: 0
 --- !u!1 &819147205
 GameObject:
   m_ObjectHideFlags: 0

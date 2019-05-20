@@ -63,10 +63,11 @@
     <Compile Include="Assets\scripts\AutoDestroy.cs" />
     <Compile Include="Assets\scripts\Bullet.cs" />
     <Compile Include="Assets\scripts\CameraRotator.cs" />
+    <Compile Include="Assets\scripts\Countdown.cs" />
     <Compile Include="Assets\scripts\DummyRenderer.cs" />
     <Compile Include="Assets\scripts\Enemy.cs" />
     <Compile Include="Assets\scripts\Enemy_Asteroid.cs" />
-    <Compile Include="Assets\scripts\GameSystem.cs" />
+    <Compile Include="Assets\scripts\FindTargetObjects.cs" />
     <Compile Include="Assets\scripts\LoopedField.cs" />
     <Compile Include="Assets\scripts\LoopedObject.cs" />
     <Compile Include="Assets\scripts\MeteoTransform.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\scripts\RestartSystem.cs" />
     <Compile Include="Assets\scripts\Score.cs" />
     <Compile Include="Assets\scripts\Shooter.cs" />
+    <Compile Include="Assets\scripts\StartSystem.cs" />
     <None Include="Assets\Asset store importing\StarfieldMaterials\README\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Windows/Documents/GitHub/SpaceOlympic/Space Olympic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

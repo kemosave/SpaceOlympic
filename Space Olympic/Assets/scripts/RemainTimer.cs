@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Text))]
 
 public class RemainTimer : MonoBehaviour
@@ -21,16 +22,20 @@ public class RemainTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime -= Time.deltaTime;//残り時間を計算
-        if (currentTime <= 0.0f)//0秒以下にはならない
+        currentTime -= Time.deltaTime;  //残り時間を計算
+        if (currentTime <= 0.0f)    //0秒以下にはならない
         {
             currentTime = 0.0f;
         }
-        uiText.text = string.Format("残り時間:{0:F}秒", currentTime);//残り時間テキスト更新
+        uiText.text = string.Format("残り時間:{0:F}秒", currentTime);    //残り時間テキスト更新
+
+        if (!IsCountingDown()) {
+            SceneManager.LoadScene("RestartActivity");
+        }
         
     }
-    public bool IsCountingDown()//カウントダウンを行っているか
+    public bool IsCountingDown()    //カウントダウンを行っているか
     {
-        return currentTime > 0.0f;//カウンターが0でないなら、カウント中
+        return currentTime > 0.0f;  //カウンターが0でないなら、カウント中
     }
 }

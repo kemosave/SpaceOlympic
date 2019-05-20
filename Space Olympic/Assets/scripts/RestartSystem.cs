@@ -7,7 +7,7 @@ public class RestartSystem : MonoBehaviour {
     //　リスタートボタンを押したらスタート画面に遷移する
     public void GameRestart()
     {
-        SceneManager.LoadScene("SpaceOlympicActivity");
+        SceneManager.LoadScene("CountdownActivity");
     }
 }
 
