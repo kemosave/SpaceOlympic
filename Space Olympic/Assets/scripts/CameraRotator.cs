@@ -9,18 +9,45 @@ public class CameraRotator : MonoBehaviour
     float verticalAngle = 0f;   //垂直方向の回転量を保存しておく
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         
     }
 
     // Update is called once per frame
 #if UNITY_EDITOR
-    void Update()
-    {
+    void Update() {
         //矢印キーからの入力による回転量を取得
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
-        {
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            var horizontalRotation = Input.GetAxis("Horizontal") * angularVelocity * Time.deltaTime;
+            var verticalRotation = Input.GetAxis("Vertical") * angularVelocity * Time.deltaTime;
+
+
+            //回転量を更新
+            horizontalAngle += horizontalRotation;
+            verticalAngle += verticalRotation;
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow)) {
+            var horizontalRotation = Input.GetAxis("Horizontal") * angularVelocity * Time.deltaTime;
+            var verticalRotation = Input.GetAxis("Vertical") * angularVelocity * Time.deltaTime;
+
+
+            //回転量を更新
+            horizontalAngle += horizontalRotation;
+            verticalAngle += verticalRotation;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow)) {
+            var horizontalRotation = Input.GetAxis("Horizontal") * angularVelocity * Time.deltaTime;
+            var verticalRotation = Input.GetAxis("Vertical") * angularVelocity * Time.deltaTime;
+
+
+            //回転量を更新
+            horizontalAngle += horizontalRotation;
+            verticalAngle += verticalRotation;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow)) {
             var horizontalRotation = Input.GetAxis("Horizontal") * angularVelocity * Time.deltaTime;
             var verticalRotation = Input.GetAxis("Vertical") * angularVelocity * Time.deltaTime;
 

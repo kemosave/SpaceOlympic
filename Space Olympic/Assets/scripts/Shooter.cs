@@ -10,14 +10,13 @@ public class Shooter : MonoBehaviour {
     [SerializeField] AudioSource gunAudioSource;    //発射音の音源
 
     // Update is called once per frame
-#if UNITY_EDITOR
     void Update() {
         //enterが押されたとき発砲する
         if (Input.GetKeyDown(KeyCode.Return)) {
             Shoot();
         }
     }
-#endif
+
 
     void Shoot() {
         //弾丸プレハブを元に戻し、シーン上に再生成

@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Collider enemyCollider;
-    [SerializeField] Renderer enemyRenderer;
-    [SerializeField] int point = 1;
-    Score score;
+    [SerializeField] int point = 1;             //倒したときに得るスコア
+    Score score;                                //スコア
 
-    private void Start()
-    {
-        var gameObj = GameObject.FindWithTag("Score");//ゲームオブジェクトを検索
-        score = gameObj.GetComponent<Score>();
+    [SerializeField] ParticleSystem gunParticle;    //爆発演出
+    [SerializeField] Transform target;  //ターゲットの位置
+
+    private void Start() {
+        var gameObj = GameObject.FindWithTag("Score");  //ゲームオブジェクトを検索
+        score = gameObj.GetComponent<Score>();  //gameObjに含まれるScoreコンポーネントを取得
     }
 
-    void OnHitBullet()
-    {
-        score.AddScore(point);
+    //命中時処理
+    void OnHitBullet() {
+        score.AddScore(point);  //スコアを加算する
+        GetComponent<MeshRenderer>().enabled = false;   //MeshRecderコンポーネントのチェックを消して、見えなくする
+        Instantiate(gunParticle, target.position, target.rotation); //パーティクルをターゲットの位置に設定する
         Destroy(gameObject);
     }
 }

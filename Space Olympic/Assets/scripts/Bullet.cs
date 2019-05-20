@@ -19,8 +19,7 @@ public class Bullet : MonoBehaviour {
         rigidbody.AddForce(velocity, ForceMode.VelocityChange);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
+    void OnTriggerEnter(Collider other) {
         other.SendMessage("OnHitBullet");
 
         Destroy(gameObject);
